@@ -40,7 +40,7 @@ function toggleAccordion(button) {
     content.addEventListener("transitionend", onOpen);
     img.classList.add("is-hidden");
     setTimeout(() => {
-      img.src = "/img/minus.svg";
+      img.src = "./img/minus.svg";
       img.classList.remove("is-hidden");
     }, 100);
   }
