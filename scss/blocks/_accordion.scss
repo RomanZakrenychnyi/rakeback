@@ -59,7 +59,7 @@ $breakpoint-mobile: 767px;
       z-index: -1; // Чтобы находиться ЗА содержимым
       
       // Стили фона для псевдоэлемента
-      background-image: image-set(url(../../img/accordion_bg_1920_1x.webp)1x,url(../../img/accordion_bg_1920_2x.webp)2x);
+      background-image: image-set(url(../img/accordion_bg_1920_1x.webp)1x,url(../img/accordion_bg_1920_2x.webp)2x);
       background-position: bottom right;
       background-size: cover;
       background-repeat: no-repeat;
@@ -203,7 +203,7 @@ $breakpoint-mobile: 767px;
 @media (max-width: 1367px) {
   .accordion {
     &__content.is-active::after {
-        background-image: image-set(url(../../img/accordion_bg_1366_1x.webp)1x,url(../../img/accordion_bg_1366_2x.webp)2x);
+        background-image: image-set(url(../img/accordion_bg_1366_1x.webp)1x,url(../img/accordion_bg_1366_2x.webp)2x);
     }
     &__list {
       flex-basis: 70%;
@@ -248,7 +248,7 @@ $breakpoint-mobile: 767px;
     }
 
     // &__content.is-active::after {
-    //     background-image: image-set(url(../../img/accordion_bg_360_1x.webp)1x,url(../../img/accordion_bg_360_2x.webp)2x);
+    //     background-image: image-set(url(../img/accordion_bg_360_1x.webp)1x,url(../img/accordion_bg_360_2x.webp)2x);
     //     background-position: bottom center;
     // }
   
@@ -284,7 +284,7 @@ $breakpoint-mobile: 767px;
 @media (max-width: 577px) {
   .accordion {
     &__content.is-active::after {
-        background-image: image-set(url(../../img/accordion_bg_360_1x.webp)1x,url(../../img/accordion_bg_360_2x.webp)2x);
+        background-image: image-set(url(../img/accordion_bg_360_1x.webp)1x,url(../img/accordion_bg_360_2x.webp)2x);
         background-position: bottom center;
     }
     &__panelBottom {

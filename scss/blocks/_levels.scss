@@ -63,13 +63,13 @@ $bgc-olive-yellow: #A9A71E;
     background-size: contain;
     background-position: bottom center;
     &--first {
-      background-image: url(../../img/ellipse_first_top.webp);
+      background-image: url(../img/ellipse_first_top.webp);
     }
     &--second {
-      background-image: url(../../img/ellipse_second_top.webp);
+      background-image: url(../img/ellipse_second_top.webp);
     }
     &--third {
-      background-image: url(../../img/ellipse_third_top.webp);
+      background-image: url(../img/ellipse_third_top.webp);
     }
   }
   
@@ -136,13 +136,13 @@ $bgc-olive-yellow: #A9A71E;
   background-size: contain;
   background-position: top center;
   &--first {
-      background-image: url(../../img/ellipse_first_bottom.webp);
+      background-image: url(../img/ellipse_first_bottom.webp);
     }
     &--second {
-      background-image: url(../../img/ellipse_second_bottom.webp);
+      background-image: url(../img/ellipse_second_bottom.webp);
     }
     &--third {
-      background-image: url(../../img/ellipse_third_bottom.webp); 
+      background-image: url(../img/ellipse_third_bottom.webp); 
     }
 }
 
