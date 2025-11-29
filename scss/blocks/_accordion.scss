@@ -1,0 +1,294 @@
+@use "../utils/mixins" as mixin;
+
+// COLOR
+$color-text-primary: #ffffff;
+$color-text-secondary: #BFBFCB;
+$color-text-btn: #2A2E0A;
+$color-text-red: #FD5022;
+$color-text-grey-blue: #8587A2;
+$color-text-purple: #AE6BB5;
+$color-text-olive-yellow: #A9A71E;
+
+// BACKGROUND
+$bgc-general: #14141A;
+$bgc-btn: #E5FF3A;
+$bgc-red: #FD5022;
+$bgc-purple: #AE6BB5;
+$bgc-olive-yellow: #A9A71E;
+
+$color-text-purple: #F2A950;
+$color-text-secondary: #bfbfcb;
+$breakpoint-mobile: 767px;
+
+.accordion {
+  position: relative;
+  width: 100%;
+  background-color: $bgc-general;
+  &__title {
+    margin-bottom: 50px;
+    font-family: "Sofia Sans Condensed", sans-serif;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  &__wrapper {
+    width: 100%;
+    max-height: 475px;
+    height: 100%;
+    border-radius: 10px;
+    background: rgba(201, 176, 55, 0.20);
+  }
+  &__content {
+    max-height: 475px;
+    border-radius: 10px;
+    transition: background-image 0.7s ease;
+    position: relative; // ОЧЕНЬ ВАЖНО для позиционирования псевдоэлемента
+    z-index: 1; // Чтобы содержимое было поверх фона
+    overflow: hidden;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      z-index: -1; // Чтобы находиться ЗА содержимым
+      
+      // Стили фона для псевдоэлемента
+      background-image: image-set(url(../../img/accordion_bg_1920_1x.webp)1x,url(../../img/accordion_bg_1920_2x.webp)2x);
+      background-position: bottom right;
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+      // Изначально невидимый
+      opacity: 0; 
+      
+      // Плавный переход для прозрачности
+      transition: opacity 0.7s ease; // Плавность 0.7s (можете настроить)
+    }
+    &.is-active::after {
+      opacity: 1;
+    }
+  }
+  &__btn {
+    padding-block: 28px;
+    padding-inline: 40px;
+    cursor: pointer;
+    color: $color-text-purple;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.8s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  &__svg-wrapper {
+    display: flex;
+    align-self: center;
+    gap: 15px;
+  
+    transition: transform 0.8s ease;
+  }
+
+  &.is-active .accordion__svg-wrapper {
+    transform: translateX(20px);
+  }
+  
+  &__svg-wrapper img {
+    width: 62px;
+    height: 50px;
+  }
+  
+  &__btnText {
+    font-size: 24px;
+    font-weight: 700;
+    color: #14141A;
+    background-color: #C9B037;
+    padding: 10px 20px;
+    border-radius: 3px;
+  }
+  &__btnImg {
+    position: relative;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--accent1);
+  }
+  
+  &__svg {
+    transition: opacity 0.16s ease;
+    opacity: 1;
+  }
+  
+  &__svg.is-hidden {
+    opacity: 0;
+  }
+  
+  &__panel {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease, opacity 0.7s ease;
+    &--opened {
+      position: relative;
+      opacity: 1;
+    }
+  }
+  &__panelBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // margin-top: 26px;
+    // padding-inline: 118px;
+    @include mixin.fluid-prop(padding-inline, 60px, 118px, 1367px, 1920px);
+    padding-bottom: 175px;
+  }
+  &__list {
+    flex-basis: 60%;
+  }
+  &__list li {
+    font-size: 16px;
+    margin-bottom: 11px;
+    line-height: 1.2;
+    list-style: none;
+    color: $color-text-secondary;
+    padding-left: 24px;
+    position: relative;
+  }
+  &__list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 1px;
+    background: #C9B037;
+    font-size: 10px;
+  }
+  &__list li:last-child {
+    margin-bottom: 0;
+  }
+  &__list-text {
+    &--white{
+      color: #ffffff;
+      font-weight: 700;
+    }
+  }
+  &__img-wrapper {
+    flex-basis: 43%;
+  }
+  &__img {
+    aspect-ratio: 772 / 391;
+    width: 100%;
+  }
+}
+
+
+
+/* --- МЕДІАЗАПИТИ --- */
+
+@media (max-width: 1367px) {
+  .accordion {
+    &__content.is-active::after {
+        background-image: image-set(url(../../img/accordion_bg_1366_1x.webp)1x,url(../../img/accordion_bg_1366_2x.webp)2x);
+    }
+    &__list {
+      flex-basis: 70%;
+      // @include mixin.fluid-prop(flex-basis, 730px, 600px, 567px, 1367px);
+    }
+    &__panelBottom {
+      @include mixin.fluid-prop(padding-inline, 16px, 60px, 577px, 1367px);
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  .accordion {
+    &__wrapper {
+      max-height: 100%;
+    }
+    &__content {
+      padding-inline: 16px;
+      max-height: 100%;
+    }
+    &__btn {
+      padding-inline:0px;
+    }
+    &__list {
+      flex-basis: 90%;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .accordion__list li {
+    font-size: 16px;
+  }
+  .accordion {
+    &__title {
+      margin-bottom: 30px;
+      font-size: clamp(32px,5.345vw,40px);
+    }
+
+    &__content.is-active::after {
+        // background-image: none;
+    }
+
+    // &__content.is-active::after {
+    //     background-image: image-set(url(../../img/accordion_bg_360_1x.webp)1x,url(../../img/accordion_bg_360_2x.webp)2x);
+    //     background-position: bottom center;
+    // }
+  
+    &__btn {
+      align-items: flex-start;
+      gap: 20px;
+    }
+  
+    &__btn.is-active .accordion__svg-wrapper {
+      transform: none;
+    }
+  
+    &__btnText {
+      font-size: clamp(16px, 4vw, 24px);
+    }
+  
+    &__svg-wrapper img {
+      height: 36px;
+    }
+  
+    &__panelBottom {
+      flex-direction: column; 
+      gap: 24px;
+      padding-inline: 0;
+    }
+
+    &__list li {
+      padding-left: 18px;
+    }
+  }
+}
+
+@media (max-width: 577px) {
+  .accordion {
+    &__content.is-active::after {
+        background-image: image-set(url(../../img/accordion_bg_360_1x.webp)1x,url(../../img/accordion_bg_360_2x.webp)2x);
+        background-position: bottom center;
+    }
+    &__panelBottom {
+      padding-bottom: 315px;
+    }
+  }
+}

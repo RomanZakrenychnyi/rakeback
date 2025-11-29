@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Install our app — get 30 Free Spins</title>
+  </head>
+  <style>
+    body {
+      display: grid;
+      grid-template-columns: var(--desktop-menu-width) 1fr;
+    }
+    @media (max-width: 1023px) {
+      body {
+        display: initial;
+      }
+    }
+  </style>
+  <body>
+    <div class="helpcontainer"></div>
+    <div class="mainContainer">
+      <section class="banner">
+        <picture>
+          <source
+            srcset="/img/banner_360_1x.webp 1x, /img/banner_360_2x.webp 2x"
+            type="image/webp"
+            media="(max-width: 576px)"
+          />
+
+          <source
+            srcset="/img/banner_1366_1x.webp 1x, /img/banner_1366_2x.webp 2x"
+            media="(max-width: 1366px)"
+          />
+
+          <source
+            srcset="/img/banner_1920_1x.webp 1x, /img/banner_1920_2x.webp 2x"
+            type="image/webp"
+          />
+          <img
+            class="banner__img"
+            src="/img/banner_1920_1x.webp"
+            alt="Halloween Prize Drops Banner"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+        <div class="banner__content">
+          <div class="banner__items">
+            <!-- <picture>
+              <source
+                srcset="
+                  /img/gameLogo_576_1x.webp 1x,
+                  /img/gameLogo_576_1x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 576px)"
+              />
+              <source
+                srcset="
+                  /img/gameLogo_1366_1x.webp 1x,
+                  /img/gameLogo_1366_2x.webp 2x
+                "
+                media="(max-width: 1366px)"
+              />
+              <source
+                srcset="
+                  /img/gameLogo_1920_1x.webp 1x,
+                  /img/gameLogo_1920_2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="banner__customLogo"
+                src="/img/gameLogo_1920_1x.png"
+                alt="Game logo"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture> -->
+            <h2
+              class="banner__title"
+              data-max-size="72"
+              data-min-size="20"
+              data-lines="2"
+              data-max-size-mob="60"
+              data-min-size-mob="40"
+              data-lines-mob="2"
+              data-lh-ratio="1"
+              data-scale="1"
+              data-scale-mob="1"
+            >
+              VIP Rakeback — Earn Back on Every Bet
+            </h2>
+            <p
+              class="banner__subtitle"
+              data-max-size="24"
+              data-min-size="9"
+              data-lines="2"
+              data-max-size-mob="19"
+              data-min-size-mob="18"
+              data-lines-mob="2"
+              data-lh-ratio="1"
+              data-scale="1"
+            >
+              Up to 1% rakeback <span class="banner__subtitle--accent">credited<br>every Wednesday automatically</span>
+            </p>
+          </div>
+          <div class="banner__btnBlock">
+            <a class="banner__btn" href="/casino/topslots/">Go play</a>
+            <!-- <div class="banner__btnBlockIcons">
+              <img
+                class="banner__btnIcon"
+                src="/img/android.svg"
+                alt="Android"
+              /><img class="banner__btnIcon" src="/img/iOS.svg" alt="iOS" />
+            </div> -->
+          </div>
+        </div>
+      </section>
+      <section class="cashback-levels">
+        <h2 class="cashback-levels__title">Rakeback Levels</h2>
+        <p class="cashback-levels__subtitle">The more you play — the higher your VIP tier, the bigger your rakeback</p>
+        <div class="cashback-levels__content-wrap">
+          <div class="cashback-levels__top-row">
+            <div class="cashback-levels__item-top cashback-levels__item-top--first" data-level="5">
+              <div class="cashback-levels__percent-wrapper">
+                <span class="cashback-levels__percent cashback-levels__percent--first">0.5%</span>
+              </div>
+              <div class="cashback-levels__svg-trigger" data-level="5">
+                <span class="cashback-levels__marker-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                  >
+                    <path
+                      d="M7.83301 10.1654H0.833008V7.83203H7.83301V0.832031H10.1663V7.83203H17.1663V10.1654H10.1663V17.1654H7.83301V10.1654Z"
+                      fill="#14141A"/></svg></span>
+              </div>
+            </div>
+
+            <div class="cashback-levels__item-top cashback-levels__item-top--second" data-level="6">
+              <div class="cashback-levels__percent-wrapper">
+                <span class="cashback-levels__percent cashback-levels__percent--second">0.7%</span>
+              </div>
+              <div class="cashback-levels__svg-trigger" data-level="6">
+                <span class="cashback-levels__marker-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                  >
+                    <path
+                      d="M7.83301 10.1654H0.833008V7.83203H7.83301V0.832031H10.1663V7.83203H17.1663V10.1654H10.1663V17.1654H7.83301V10.1654Z"
+                      fill="#14141A"
+                    /></svg></span>
+              </div>
+            </div>
+
+            <div class="cashback-levels__item-top cashback-levels__item-top--third" data-level="7">
+              <div class="cashback-levels__percent-wrapper">
+                <span class="cashback-levels__percent cashback-levels__percent--third">1%</span>
+              </div>
+              <div class="cashback-levels__svg-trigger" data-level="7">
+                <span class="cashback-levels__marker-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                  >
+                    <path
+                      d="M7.83301 10.1654H0.833008V7.83203H7.83301V0.832031H10.1663V7.83203H17.1663V10.1654H10.1663V17.1654H7.83301V10.1654Z"
+                      fill="#14141A"
+                    /></svg></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cashback-levels__track-wrapper">
+            <ul class="cashback-levels__track">
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+              <li class="cashback-levels__segment">
+                <div class="cashback-levels__bar is-active"></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="cashback-levels__bottom-row">
+            <div class="cashback-levels__item-bottom cashback-levels__item-bottom--first" data-level="5">
+              <div class="cashback-levels__details-content">
+                <p class="cashback-levels__percent cashback-levels__percent--first">0.5%</p>
+                <p class="cashback-levels__amount cashback-levels__amount--first">15 000 EUR+</p>
+                <p class="cashback-levels__cashback">0.5% Rakeback</p>
+                <p class="cashback-levels__condition">
+                  Is credited if the player's total sum of casino bets during last 7 days is more than 15 000 EUR or equivalent
+                </p>
+              </div>
+            </div>
+
+            <div class="cashback-levels__item-bottom cashback-levels__item-bottom--second" data-level="6">
+              <div class="cashback-levels__details-content">
+                <p class="cashback-levels__percent cashback-levels__percent--second">0.7%</p>
+                <p class="cashback-levels__amount cashback-levels__amount--second">30 000 EUR+</p>
+                <p class="cashback-levels__cashback">0.7% Rakeback</p>
+                <p class="cashback-levels__condition">
+                  Is credited if the player's total sum of casino bets during last 7 days is more than 30 000 EUR or equivalent
+                </p>
+              </div>
+            </div>
+
+            <div class="cashback-levels__item-bottom cashback-levels__item-bottom--third" data-level="7">
+              <div class="cashback-levels__details-content">
+                <p class="cashback-levels__percent cashback-levels__percent--third">1%</p>
+                <p class="cashback-levels__amount cashback-levels__amount--third">50 000 EUR+</p>
+                <p class="cashback-levels__cashback">1% Rakeback</p>
+                <p class="cashback-levels__condition">
+                  Is credited if the player's total sum of casino bets during last 7 days is more than 50 000 EUR or equivalent
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="btn cashback-levels__btn" href="/casino/topslots/">Go play</a>
+      </section>
+      <!-- <section class="tournament sec-top-padding-spacing sec-bottom-padding-spacing">
+          <div class="tournament__wrapper">
+            <h2 class="tournament__title">
+              Join the tournament and explore our latest slot releases
+            </h2>
+            <p class="tournament__subtitle">
+              Play for your chance to win a share of
+              <span class="tournament__subtitle--accent"
+                >1,000 Free Spins!</span
+              >
+            </p>
+          </div>
+          <div class="slots">
+            <div class="slots__event">
+              <div
+                class="slots__icon"
+                style="--slots-icon: #ae6bb5; width: 32px; height: 32px"
+              >
+                <img src="/img/clock.svg" alt="" width="32" height="32" />
+              </div>
+              <p class="slots__event-text">Limited-Time Event</p>
+            </div>
+            <div class="slots__event">
+              <div
+                class="slots__icon"
+                style="--slots-icon: #a9a71e; width: 32px; height: 32px"
+              >
+                <img src="/img/gamepad.svg" alt="" width="32" height="32" />
+              </div>
+              <p class="slots__event-text">New Games Only</p>
+            </div>
+            <div class="slots__event">
+              <div
+                class="slots__icon"
+                style="--slots-icon: #ec6b55; width: 32px; height: 32px"
+              >
+                <img src="/img/gift.svg" alt="" width="32" height="32" />
+              </div>
+              <p class="slots__event-text">No Wagering on Prizes</p>
+            </div>
+          </div>
+      </section> -->
+      <!-- <section class="trick sec-top-spacing">
+        <h3 class="trick__title">BONUS DETAILS</h3>
+        <div class="trick__content">
+          <div class="trickCard">
+            <div class="trickCard__content">
+              <div class="trickCard__pic">
+                <img
+                  class="trickCard__img"
+                  src="/img/trickImg_1.webp"
+                  alt="Prize fund"
+                />
+              </div>
+              <div class="trickCard__title">Game</div>
+              <div class="trickCard__info">
+                Burning Chilli X <br />
+                by Bgaming
+              </div>
+            </div>
+          </div>
+          <div class="trickCard">
+            <div class="trickCard__content">
+              <div class="trickCard__pic">
+                <img
+                  class="trickCard__img"
+                  src="/img/trickImg_2.webp"
+                  alt="Qualification"
+                />
+              </div>
+              <div class="trickCard__title">Offer</div>
+              <div class="trickCard__info">30 Free Spins</div>
+            </div>
+          </div>
+          <div class="trickCard">
+            <div class="trickCard__content">
+              <div class="trickCard__pic">
+                <img
+                  class="trickCard__img"
+                  src="/img/trickImg_3.webp"
+                  alt="Min bet"
+                />
+              </div>
+              <div class="trickCard__title">Minimum Deposit</div>
+              <div class="trickCard__info">€15</div>
+            </div>
+          </div>
+          <div class="trickCard">
+            <div class="trickCard__content">
+              <div class="trickCard__pic">
+                <img
+                  class="trickCard__img"
+                  src="/img/trickImg_4.webp"
+                  alt="Mechanic"
+                />
+              </div>
+              <div class="trickCard__title">Wagering</div>
+              <div class="trickCard__info">None</div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- <section>
+        <p class="custom-p">
+          👆 <strong class="accent-w">Available once per account.</strong> Free
+          Spin promocode will be sent to your email, just enter it on the
+          “Bonuses” page and deposit
+        </p>
+        <a class="btn btn--onlyMobile installAppBtn" href="#">Install App</a>
+      </section> -->
+      <!-- <section class="table sec-top-spacing">
+        <div class="table__wrapper">
+          <h2 class="table__title">Prize table</h2>
+          <div class="table__container">
+            <table class="prize-table">
+              <thead class="prize-table__head">
+                <tr>
+                  <th class="place-column">From place</th>
+                  <th class="place-column">To place</th>
+                  <th class="prize-column">Prize, EUR</th>
+                  <th class="prize-column">Free Spins</th>
+                </tr>
+              </thead>
+              <tbody class="prize-table__body">
+                <tr style="height: 1px"></tr>
+                <tr>
+                  <td data-label="From place" class="medal-cell">
+                    <picture class="medal-picture">
+                      <source
+                        srcset="/img/gold@1x.webp 1x, /img/gold@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <img
+                        src="/img/gold@1x.webp"
+                        alt="Gold medal"
+                        class="medal-img"
+                      />
+                    </picture>
+                  </td>
+                  <td data-label="To place" class="medal-cell">
+                    <picture class="medal-picture">
+                      <source
+                        srcset="/img/gold@1x.webp 1x, /img/gold@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <img
+                        src="/img/gold@1x.webp"
+                        alt="Gold medal"
+                        class="medal-img"
+                      />
+                    </picture>
+                  </td>
+                  <td data-label="Prize, EUR" class="prize-table__body--accent">
+                    € 2 000
+                  </td>
+                  <td data-label="Free Spins" class="prize-table__body--accent">
+                    400
+                  </td>
+                </tr>
+
+                <tr>
+                  <td data-label="From place" class="medal-cell">
+                    <picture class="medal-picture">
+                      <source
+                        srcset="/img/silver@1x.webp 1x, /img/silver@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <img
+                        src="/img/silver@1x.webp"
+                        alt="Silver medal"
+                        class="medal-img"
+                      />
+                    </picture>
+                  </td>
+                  <td data-label="To place" class="medal-cell">
+                    <picture class="medal-picture">
+                      <source
+                        srcset="/img/silver@1x.webp 1x, /img/silver@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <img
+                        src="/img/silver@1x.webp"
+                        alt="Silver medal"
+                        class="medal-img"
+                      />
+                    </picture>
+                  </td>
+                  <td data-label="Prize, EUR">€ 1 000</td>
+                  <td data-label="Free Spins">200</td>
+                </tr>
+
+                <tr>
+                  <td data-label="From place" class="medal-cell">
+                    <picture class="medal-picture">
+                      <source
+                        srcset="/img/bronze@1x.webp 1x, /img/bronze@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <img
+                        src="/img/bronze@1x.webp"
+                        alt="Bronze medal"
+                        class="medal-img"
+                      />
+                    </picture>
+                  </td>
+                  <td data-label="To place" class="medal-cell">
+                    <picture class="medal-picture">
+                      <source
+                        srcset="/img/bronze@1x.webp 1x, /img/bronze@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <img
+                        src="/img/bronze@1x.webp"
+                        alt="Bronze medal"
+                        class="medal-img"
+                      />
+                    </picture>
+                  </td>
+                  <td data-label="Prize, EUR">€ 500</td>
+                  <td data-label="Prize, EUR">150</td>
+                </tr>
+
+                <tr>
+                  <td data-label="From place">4</td>
+                  <td data-label="From place">5</td>
+                  <td data-label="Free Spins" class="prize-table__body--accent">
+                    € 250
+                  </td>
+                  <td data-label="Free Spins" class="prize-table__body--accent">
+                    100
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="From place">6</td>
+                  <td data-label="From place">10</td>
+                  <td data-label="Prize, EUR" class="prize-table__body--accent">
+                    € 200
+                  </td>
+                  <td data-label="Prize, EUR" class="prize-table__body--accent">
+                    40
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section> -->
+      <section class="accordion sec-top-spacing">
+        <div class="accordion__background">
+          <h2 class="accordion__title">Terms & Conditions</h2>
+          <div class="accordion__wrapper">
+            <div class="accordion__content">
+              <button class="accordion__btn" onclick="toggleAccordion(this)">
+                <div class="accordion__svg-wrapper">
+                  <img src="/img/goblet.svg" alt="goblet" />
+                  <p class="accordion__btnText">Everything you need to know about your rakeback</p>
+                </div>
+                <div class="accordion__btnImg">
+                  <img class="accordion__svg" src="./img/plus.svg" alt="plus" />
+                </div>
+              </button>
+              <div class="accordion__panel">
+                <div class="accordion__panelBottom">
+                  <ul class="accordion__list">
+                    <li>
+                      Rakeback is given as a weekly reward for players, who's turnover is more than 
+                      <span class="accordion__list-text--white"
+                        >15 000 EUR during the week in total.</span
+                      >
+                    </li>
+                    <li>
+                      Rakeback is credited automatically <span class="accordion__list-text--white">every Wednesday.</span>
+                    </li>
+                    <li>
+                      <span class="accordion__list-text--white"
+                        >0.5% rakeback</span
+                      >
+                      is credited if the player's total turnover during <span class="accordion__list-text--white"
+                        >last 7 days is more than 15 000 EUR or equivalent.</span
+                      >
+                    </li>
+                    <li>
+                      <span class="accordion__list-text--white"
+                        >0.7% rakeback</span
+                      >
+                      is credited if the player's total turnover during <span class="accordion__list-text--white"
+                        >last 7 days is more than 30 000 EUR or equivalent.</span
+                      >
+                    </li>
+                    <li>
+                      <span class="accordion__list-text--white"
+                        >1% rakeback</span
+                      >
+                      is credited if the player's total turnover during <span class="accordion__list-text--white"
+                        >last 7 days is more than 50 000 EUR or equivalent.</span
+                      >
+                    </li>
+                    <li>
+                      The maximum rakeback bonus amount is <span class="accordion__list-text--white"
+                        >1000 EUR</span
+                      > or equivalent.
+                    </li>
+                    <li>
+                      The wagering requirement for the rakeback bonus is 
+                      <span class="accordion__list-text--white"
+                        >x15</span
+                      >.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="howWorks sec-top-spacing">
+        <h2 id="videoGuide" class="howWorks__title">How it works</h2>
+        <div class="howWorks__content">
+          <div class="howWorks__videoWrapper">
+            <div class="howWorks__videoContent">
+              <video
+                class="howWorks__video"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+                src="/video/howToInstall.mp4"
+              ></video>
+              <video
+                class="howWorks__video"
+                autoplay="autoplay"
+                muted="muted"
+                loop="loop"
+                playsinline="playsinline"
+                preload="auto"
+              >
+                <source src="/video/howToInstall.webm" type="video/webm" />
+                <source src="/video/howToInstall.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+          <div class="howWorks__cards">
+            <div class="appHowWorksCard">
+              <div class="appHowWorksCard__tip">01 Step</div>
+              <div class="appHowWorksCard__descr">
+                <h5 class="appHowWorksCard__title">Open website in browser</h5>
+                <div class="appHowWorksCard__text">
+                  Open the <strong>browser</strong> app on your phone
+                </div>
+              </div>
+            </div>
+            <div class="appHowWorksCard">
+              <div class="appHowWorksCard__tip">02 Step</div>
+              <div class="appHowWorksCard__descr">
+                <h5 class="appHowWorksCard__title">Tap the Sharing button</h5>
+                <div class="appHowWorksCard__text">
+                  Use browser to go to CLAPS, then tap the
+                  <strong class="accent-w">Sharing</strong> button
+                </div>
+              </div>
+            </div>
+            <div class="appHowWorksCard">
+              <div class="appHowWorksCard__tip">03 Step</div>
+              <div class="appHowWorksCard__descr">
+                <h5 class="appHowWorksCard__title">Tap “Add to Home Screen”</h5>
+                <div class="appHowWorksCard__text">
+                  Press
+                  <strong class="accent-w">“Add to Home Screen”</strong> in the
+                  list popup to add the app to your home screen.
+                </div>
+              </div>
+            </div>
+            <div class="appHowWorksCard appHowWorksCard--last">
+              <img
+                class="appHowWorksCard__tinyImg"
+                src="/img/tiny_icon_claps.svg"
+                alt="tiny icon claps"
+              />
+              <div class="appHowWorksCard__descr appHowWorksCard__descr--last">
+                <div class="appHowWorksCard__text appHowWorksCard__text--last">
+                  The <strong class="accent-w">Claps</strong> icon will appear
+                  on your home screen — open it like a regular app
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="btn btn--onlyMobile installAppBtn" href="#">Install App</a>
+      </section> -->
+      <!-- <section class="how_2 sec-top-spacing">
+        <div class="how_2__title">WHY INSTALL?</div>
+        <div class="how_2__content">
+          <div class="howCard_2">
+            <div class="howCard_2__content">
+              <div class="howCard_2__counter">
+                <div class="howCard_2__svg">
+                  <img
+                    class="howCard_2__svg-icon"
+                    src="/img/lightingIcon.svg"
+                    alt=" No Stores"
+                  />
+                </div>
+                <div class="howCard_2__number">01</div>
+              </div>
+              <div>
+                <div class="howCard_2__title" style="--bg: #ae6bb5">
+                  Fast Launch
+                </div>
+                <p class="howCard_2__info">
+                  Start playing instantly from your home screen — no loading
+                  time
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="howCard_2">
+            <div class="howCard_2__content">
+              <div class="howCard_2__counter">
+                <div class="howCard_2__svg">
+                  <img
+                    class="howCard_2__svg-icon"
+                    src="/img/phoneIcon.svg"
+                    alt=" No Stores"
+                  />
+                </div>
+                <div class="howCard_2__number">02</div>
+              </div>
+              <div>
+                <div class="howCard_2__title" style="--bg: #a9a71e">
+                  No Stores
+                </div>
+                <p class="howCard_2__info">
+                  Install directly from your browser — no App Store or Google
+                  Play needed
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="howCard_2">
+            <div class="howCard_2__content">
+              <div class="howCard_2__counter">
+                <div class="howCard_2__svg">
+                  <img
+                    class="howCard_2__svg-icon"
+                    src="/img/bellIcon.svg"
+                    alt="Instant Alerts"
+                  />
+                </div>
+                <div class="howCard_2__number">03</div>
+              </div>
+              <div>
+                <div class="howCard_2__title" style="--bg: #fd5022">
+                  Instant Alerts
+                </div>
+                <p class="howCard_2__info">
+                  Get quick notifications about new bonuses and free spins
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="howCard_2">
+            <div class="howCard_2__content">
+              <div class="howCard_2__counter">
+                <div class="howCard_2__svg">
+                  <img
+                    class="howCard_2__svg-icon"
+                    src="/img/moneyIcon.svg"
+                    alt="Exclusive Bonus"
+                  />
+                </div>
+                <div class="howCard_2__number">04</div>
+              </div>
+              <div>
+                <div class="howCard_2__title" style="--bg: #fd9572">
+                  Exclusive Bonus
+                </div>
+                <p class="howCard_2__info">
+                  Enjoy special rewards available only in the Claps app
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="banner sec-top-spacing">
+        <picture>
+          <source
+            srcset="/img/banner_2_360_1x.webp 1x, /img/banner_2_360_2x.webp 2x"
+            type="image/webp"
+            media="(max-width: 576px)"
+          />
+          <source
+            srcset="
+              /img/banner_2_1366_1x.webp 1x,
+              /img/banner_2_1366_2x.webp 2x
+            "
+            media="(max-width: 1366px)"
+          />
+          <source
+            srcset="
+              /img/banner_2_1920_1x.webp 1x,
+              /img/banner_2_1920_2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="banner__img"
+            src="/img/banner_2_1920_1x.webp"
+            alt="Halloween Prize Drops Banner"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+        <div class="banner__content banner__content--third">
+          <div class="banner__items">
+            <h2
+              class="banner__title banner__title--third"
+              data-max-size="40"
+              data-min-size="20"
+              data-lines="2"
+              data-scale="1"
+              data-max-size-mob="36"
+              data-min-size-mob="24"
+              data-lines-mob="3"
+              data-scale-mob="1"
+              data-lh-ratio="1"
+            >
+              YOUR VIP RAKEBACK<br>IS WAITING
+            </h2>
+            <p
+              class="banner__subtitle banner__subtitle--third"
+              data-max-size="18"
+              data-min-size="9"
+              data-lines="2"
+              data-max-size-mob="19"
+              data-min-size-mob="15"
+              data-lines-mob="2"
+              data-lh-ratio="1"
+              data-scale="1"
+            >
+              Earn more from every bet.<br>Get your rakeback every week!
+            </p>
+          </div>
+          <a class="banner__btn banner__btn--second" href="/casino/topslots/"
+            >Play to get rakeback</a
+          >
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
