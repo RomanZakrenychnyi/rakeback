@@ -203,7 +203,7 @@ $breakpoint-mobile: 767px;
 @media (max-width: 1367px) {
   .accordion {
     &__content.is-active::after {
-        background-image: image-set(url(../img/accordion_bg_1366_1x.webp)1x,url(../img/accordion_bg_1366_2x.webp)2x);
+        background-image: image-set(url(../img/accordion_bg_1366_1x.webp)1x,url(../img/accordion_bg_1366_2x.webp)2x); 
     }
     &__list {
       flex-basis: 70%;
